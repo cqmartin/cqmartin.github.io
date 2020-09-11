@@ -17,15 +17,15 @@ header {
 }
 h1 {
 	font-family: helvetica, sans-serif;
-	font-size: 40px;
+	font-size: 2.5em;
 	font-weight: bold;
-	line-height: 50px;
+	line-height: 1em;
 	text-transform: uppercase;
 	color: #0086c9;
-	padding-top: 20px;
-	padding-left: 20px;
-	margin-bottom: 10px;
-	margin-right: 40px;
+	padding-top: 1.25em;
+	padding-left: 1.25em;
+	margin-bottom: .5em;
+	margin-right: 1em;
 }
 h2 {
 	display: inline;
@@ -70,10 +70,9 @@ a {
 }
 .product-bottle {
 	position: relative;
-	width: 31%;
+	width: 35%;
 	bottom: 33em;
-	padding: 20px;
-	position: left;
+	padding: 1em;
 	float: left;
 }
 .headline-italic {
@@ -91,6 +90,9 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	float: none;
+}
+#process {
+	height: 500px;
 }
 .section-2-image {
 	background-image: url("../images/7188 copy.jpg");
@@ -111,9 +113,6 @@ a {
 	float: none;
 	bottom: 455px;
 }
-#process {
-	height: 500px;
-}
 .process-italic {
 	display: inline;
 	padding: .3em;
@@ -126,52 +125,62 @@ a {
 	height: 50px;
 	float: none;
 	width: 50%;
-	bottom: 10px;
+	bottom: 1em;
 }
 .process-steps {
 	position: relative;
 	border: 1px black solid;
-	padding: 1em;
-	margin: 1em;
+	padding-left: 1em;
+	margin-left: 2em;
 	width: 35%;
-	left: 22em;
+	left: 18em;
+	bottom: 3em;
 }
 ul {
-	line-height: 2em;
+	width: 100%;
+	list-style: none;
+	line-height: 1em;
+	font-weight: lighter;
+	padding: 1em;
 }
 li {
 	list-style-image: url("../images/drop-200.png");
 	margin: .5em;
-	vertical-align: middle;
+/*	line-height: 1em;
+	vertical-align: middle;*/
 }
-ul li::marker {
+/*ul {
+	padding-left: 1em;
+}*/
+/*ul li::marker {
 	margin-left: .5em;
 	padding: 2em;
+}*/
+#about-us {
+	width: 100%;
+	background-color: #F1F2F2;
+	height: 28em;
 }
-/*.clearfix:after {
+.image-links {
+/*	display: inline;*/
+	position: absolute;
+	width: 20%;
+	display: flex;
+	padding: 2em;
+}
+.clearfix:after {
 	visibility: hidden;
 	display: block;
 	font-size: 0;
 	content: " ";
 	clear: both;
 	height: 0;
-}*/
-#about-us {
-	width: 100%;
-	background-color: #F1F2F2;
-	height: 500px;
-}
-.image-links {
-	width: 80%;
-	margin-top: 3em;
-	padding-left: 2em;
-	border: 2em;
-	float: left;
 }
 .about-block {
 	position: relative;
 	width: 30%;
-	bottom: 250px;
+	bottom: 250px
+	margin-top: 17em;
 	margin-left: 50em;
 	margin-right: 2em;
 	float: right;
@@ -194,21 +203,14 @@ p {
 	line-height: 25px;
 	font-size: 1em;
 }
-ul {
-	width: 100%;
-	list-style: none;
-	line-height: 25px;
-	font-weight: lighter;
-	padding: 20px;
-}
 footer {
 	width: 100%;
-	height: auto;
-	background-color: white;
+    margin: 1em;
+    padding: 1em;
+    line-height: 1em;
 }
 .social-media {
-	align-items: right;
-	margin-right: 30px;
+	margin-right: 3em;
 	float: right;
 }
 #fixed-width-facebook {
@@ -221,7 +223,7 @@ footer {
 	width: 20px;
 }
 img {
-	max-width: 100%;
+	width: 100%;
 }
 body {
 	font-family: helvetica light, sans-serif;
@@ -229,38 +231,52 @@ body {
 	font-size: 16px;
 	line-height: 30px;
 	text-align: left;
-	height: 100%;
+/*	height: 100%;*/
 }
-@media only screen and (max-width:768px) {
-	#fixed-width-logo {
-	width: 15%;
-	padding: 20px;
-	float: left;
-}
-	h2 {
+@media only screen and (max-width:915px) {
+#fixed-width-logo {
 	display: inline;
-	font-size: 1.5em;
-	font-family: helvetica, sans-serif;
-	font-weight: lighter;
-	font-style: italic;
-	color: #0086c9;
-	margin-top: 1.75em;
-	float: left;
+	width: 15%;
+	margin: 1em;
+	padding: 1em;
+	bottom: 1em;
 }
+h2 {
+	font-size: 1.5em;
+}
+
 header {
-	height: 115px;
+	height: 8em;
 }
 nav {
-	display: inline;
-	font-family: helvetica, sans-serif;
-	font-weight: lighter;
-	color: #0086c9;
-	padding-left: 1em;
-	padding-right: 1em;
-	margin-top: 2.5em;
 	margin-right: 1em;
-	float: right;
 }
 a {
 	margin-right: 1em;
+}
+h3 {
+	padding: 2em;
+}
+h3+h3 {	
+	padding: 0;
+}
+.product-bottle {
+	width: 33%;
+}
+.process-steps {
+	width: 37%;
+	margin-top: 1.5em;
+	left: 16em;
+}
+.image-links {
+	display: inline;
+	width: 15%;
+	margin-top: 3em;
+	padding-left: 2em;
+	border: 2em;
+	float: left;
+}
+.about-block {
+    bottom: 12em;
+	}
 }
